@@ -1,0 +1,13 @@
+.header {
+	background-color: #131921;
+}
+
+.header__logo {
+	width: 100px;
+	margin: 0 20px ;
+	margin-top: 18px;
+}
+.header__searchInput{
+	width: 40%;
+	margin-bottom: 18px
+}
