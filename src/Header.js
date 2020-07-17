@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css"
 import {Link} from "react-router-dom";
+import SearchIcon from '@material-ui/icons/Search';
 
 function Header() {
 	return(
@@ -14,7 +15,10 @@ function Header() {
 			</Link>
 
 			{/*Search in the middle*/}
-			<input type="text" className="header__searchInput"/>
+			<div className="header__search">
+				<input type="text" className="header__searchInput"/>
+				<SearchIcon className="header__searchIcon"/>
+			</div>
 
 
 			{/*3 Links, sign in , orders, your prime*/}
