@@ -51,7 +51,6 @@ function Header() {
 					</div>
 				</Link>
 			</div>
-			{/*Basket icon + number of items */}
 		</nav>
 	);
 }
