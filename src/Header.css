@@ -8,6 +8,7 @@
 	width: 100px;
 	margin: 0 20px ;
 	margin-top: 18px;
+	object-fit: contain;
 }
 
 .header__search{
@@ -26,4 +27,14 @@
 	padding:10px;
 	border: none;
 	width: 100%;
+}
+.header__nav{
+	display: inline;
+}
+
+.header__link{
+}
+
+.header__option{
+
 }
