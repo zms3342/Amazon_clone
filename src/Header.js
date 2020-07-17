@@ -20,8 +20,29 @@ function Header() {
 				<SearchIcon className="header__searchIcon"/>
 			</div>
 
+			{/* Links, sign in , orders, your prime*/}
+			<div className="header__nav">
+				<Link className="header__link" to="/login">
+					<div className="header__option">
+						<span>Johnny Appleseed</span>
+						<span>Sign in</span>
+					</div>
+				</Link>
 
-			{/*3 Links, sign in , orders, your prime*/}
+				<Link className="header__link" to="/">
+					<div className="header__option">
+						<span>Returns</span>
+						<span>& Orders</span>
+					</div>
+				</Link>
+
+				<Link className="header__link" to="/">
+					<div className="header__option">
+						<span>Your</span>
+						<span>Prime</span>
+					</div>
+				</Link>
+			</div>
 			{/*Basket icon + number of items */}
 		</nav>
 	);
