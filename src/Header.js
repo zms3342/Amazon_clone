@@ -10,6 +10,8 @@ function Header() {
 //state and dispacth, state is gonna give me the basket array
 //dispatch is like a gun that shoots actions at the data layer add or remove
 	const [{basket}, dispatch] = useStateValue();
+
+	console.log(basket);
 	return(
 		<nav className="header">
 			{/*Logo on left */}
