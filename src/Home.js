@@ -21,7 +21,7 @@ function Home(){
 				price={21.75} 
 				rating={4}/>
 				<Product
-				id="1230973"
+				id="1230979"
 				title="Noam Chomsky - Internationalism or Extinction"
 				image="https://m.media-amazon.com/images/I/511aJcMzPyL._AC_SL520_.jpg"
 				price={21.75} 
@@ -30,19 +30,19 @@ function Home(){
 
 			<div className="home__row">
 				<Product
-				id="1230973"
+				id="1230972"
 				title="Noam Chomsky - Internationalism or Extinction"
 				image="https://m.media-amazon.com/images/I/511aJcMzPyL._AC_SL520_.jpg"
 				price={21.75} 
 				rating={4}/>
 				<Product
-				id="1230973"
+				id="1230974"
 				title="Noam Chomsky - Internationalism or Extinction"
 				image="https://m.media-amazon.com/images/I/511aJcMzPyL._AC_SL520_.jpg"
 				price={21.75} 
 				rating={4}/>
 				<Product
-				id="1230973"
+				id="1230975"
 				title="Noam Chomsky - Internationalism or Extinction"
 				image="https://m.media-amazon.com/images/I/511aJcMzPyL._AC_SL520_.jpg"
 				price={21.75} 
@@ -51,7 +51,7 @@ function Home(){
 
 			<div className="home__row">
 				<Product
-				id="1230973"
+				id="1230976"
 				title="Noam Chomsky - Internationalism or Extinction"
 				image="https://m.media-amazon.com/images/I/511aJcMzPyL._AC_SL520_.jpg"
 				price={21.75} 
