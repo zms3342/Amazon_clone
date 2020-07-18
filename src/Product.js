@@ -1,7 +1,25 @@
 import React from "react";
 import "./Product.css";
+import {useStateValue} from "./StateProvider";
+
 
 function Product({id, title, image, price, rating}){
+	const [{basket},dispatch] =useStateValue();
+
+	const addToBasket = () => {
+	//add function that adds to basket
+	dispatch({
+		type: 'ADD_TO_BASKET',
+		item:{
+			id: id,
+			title: title, 
+			image: image, 
+			price: price, 
+			rating: rating,
+			}
+		});
+	}
+
 	return(
 		<div className="product">
 			<div className="product__info">
@@ -21,9 +39,11 @@ function Product({id, title, image, price, rating}){
 				</div>
 			</div>
 			<img className="product__img" src={image} alt="" />
-			<button className="product__button"> Add to basket </button>
+			<button onClick={addToBasket} className="product__button"> Add to basket </button>
 		</div>
 		);
 }
 
 export default Product;
+
+//on click the button is going to push the product into the array by firing off an action

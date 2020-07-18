@@ -1,6 +1,6 @@
 // sets up data layer
 //TRACK THE BASKET 
-import React, {createContext,userContext,useReducer} from "react";
+import React, {createContext,useContext,useReducer} from "react";
 
 //empty data layer
 export const StateContext = createContext();
@@ -11,3 +11,5 @@ export const StateProvider = ({ reducer, initialState, children})=>(
 	{children}
 	</StateContext.Provider>
 )
+
+export const useStateValue = () => useContext(StateContext);

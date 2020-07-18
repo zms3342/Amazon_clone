@@ -1,19 +1,23 @@
 //data initial state store is an object
 export const initialState = {
-	basket:[],
+	basket: [],
 };
 
 //action ex.) add item to basket
 //mutable updates
-function reducer(state,action){
+const reducer = (state,action) => {
+	console.log(action)
 	switch(action.type) {
 		case 'ADD_TO_BASKET':
 		//logic to add to basket
-		break; 
+			return {
+				...state,
+				basket: [...state.basket, action.item],
+			};
 
 		case 'REOMVE_FROM_BASKET':
 		//logic to remove from basket
-		break;
+			return {state};
 
 		default: 
 		//return state that we started with
