@@ -19,7 +19,8 @@ function Checkout(){
 				</div>
 			) : (
 				<div>
-					<h2> Your Shopping Cart </h2>
+					<h2 className="checkout__title"> Your Shopping Cart </h2>
+				{/* checkout product comp */}
 				</div>
 			)}
 		</div>
