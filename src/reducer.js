@@ -9,6 +9,9 @@ export const initialState = {
 	}],
 };
 
+export const getBasketTotal = (basket) => 
+basket?.reduce((amount, item) => item.price +amount, 0);
+
 //action ex.) add item to basket
 //mutable updates
 const reducer = (state,action) => {
@@ -23,7 +26,9 @@ const reducer = (state,action) => {
 
 		case 'REMOVE_FROM_BASKET':
 		//logic to remove from basket
+			//clone basket
 			let newBasket = [...state.basket]
+			//find the index we want to remove
 			const index = state.basket.findIndex(
 				(basketItem)=>basketItem.id === action.id);
 			if (index >= 0 ){
