@@ -1,6 +1,12 @@
 //data initial state store is an object
 export const initialState = {
-	basket: [],
+	basket: [{
+			id:"1230973",
+			title:"Noam Chomsky - Internationalism or Extinction",
+			image:"https://m.media-amazon.com/images/I/511aJcMzPyL._AC_SL520_.jpg",
+			price:21.75, 
+			rating:4
+	}],
 };
 
 //action ex.) add item to basket
@@ -15,9 +21,23 @@ const reducer = (state,action) => {
 				basket: [...state.basket, action.item],
 			};
 
-		case 'REOMVE_FROM_BASKET':
+		case 'REMOVE_FROM_BASKET':
 		//logic to remove from basket
-			return {state};
+			let newBasket = [...state.basket]
+			const index = state.basket.findIndex(
+				(basketItem)=>basketItem.id === action.id);
+			if (index >= 0 ){
+				//item exists get rid of it
+				newBasket.splice(index,1);
+			}
+			else{
+				console.log('cant remove');
+			}
+
+			return {
+				...state,
+				 basket: newBasket,
+				};
 
 		default: 
 		//return state that we started with
