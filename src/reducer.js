@@ -1,12 +1,7 @@
 //data initial state store is an object
 export const initialState = {
-	basket: [{
-			id:"1230973",
-			title:"Noam Chomsky - Internationalism or Extinction",
-			image:"https://m.media-amazon.com/images/I/511aJcMzPyL._AC_SL520_.jpg",
-			price:21.75, 
-			rating:4
-	}],
+	basket: [],
+	user:null,
 };
 
 export const getBasketTotal = (basket) => 
@@ -17,6 +12,11 @@ basket?.reduce((amount, item) => item.price +amount, 0);
 const reducer = (state,action) => {
 	console.log(action)
 	switch(action.type) {
+		case 'SET_USER': 
+			return {
+				...state, 
+				user: action.user
+			}
 		case 'ADD_TO_BASKET':
 		//logic to add to basket
 			return {
