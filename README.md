@@ -11,9 +11,9 @@
 
 ## Functionality
 
-    #1.) add to cart
-    #2.) basic authorization (sign in)
-    #3.) cart total calulation 
+    1.) add to cart
+    2.) basic authorization (sign in)
+    3.) cart total calulation 
     
 ## Live Link 
    https://clone-29d70.web.app/
