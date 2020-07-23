@@ -16,7 +16,7 @@
     #3.) cart total calulation 
     
 ## Live Link 
-   #https://clone-29d70.web.app/
+   https://clone-29d70.web.app/
 
 
 
